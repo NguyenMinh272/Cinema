@@ -5,8 +5,8 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('', HomeView, name='Home'),
-    path('movielist/', MovieList, name='movielist'),
+    path('movielist/', MovieList, name='Home'),
+    path('', HomeView, name='movielist'),
     path('booksite/', booksite, name='booksite'),
     path('movie-detail-<int:id>/', MovieDetail, name='MovieDetail'),
     path('register/', UserRegistionView.as_view(), name='register'),
